@@ -1,0 +1,23 @@
+@model Pokemon
+
+<h1>Registrar Pokemon</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control">
+ 
+<label asp-for="Ciudad"></label>
+        <input asp-for="Ciudad" class="form-control">
+         
+<label asp-for="Lider"></label>
+        <input asp-for="Lider" class="form-control">
+
+    
+    <div class="form-group">
+        <label asp-for="Foto"></label>
+        <input asp-for="Foto" class="form-control">
+    </div>
+    
+    <button class="btn btn-primary">Registrar</button>
+</form>
