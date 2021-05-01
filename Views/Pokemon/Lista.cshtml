@@ -1,19 +1,23 @@
 @model List<Pokemon>
 
-<h1>Lista de pokemones registrados en la Pokedex</h1>
+<h1>Lista de entrenadores registrados </h1>
 
 @if (Model.Count == 0) {
-    <div class="alert alert-warning text-center">Aún no hay pokemones en la pokedex.</div>
+    <div class="alert alert-warning text-center">Aún no hay entrenadores .</div>
 } else {
     <ol>
     @foreach (var p in Model) {
        <ul>
         <li class="d-flex">
-            <div><img src="@p.Foto" /></div>
-           <p>      <div>@p.Nombre</div></p>
-           <p>__<div>@p.Ciudad</div></p>
-          <p>___<div>@p.Lider</div></p>
+            <div><img src="@p.Foto" width="150" height="100" /></div>
+            <ol>
+           <li>   <div>@p.Nombre</div></li>
+           <li> <div>@p.Ciudad</div></li>
+          <li> <div>@p.Lider</div></li>
+
+          </ol>
         </li>
+        
 </ul>
     }
     </ol>
